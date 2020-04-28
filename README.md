@@ -36,3 +36,12 @@ git push origin v1.1
 ```
 git cherry-pick sha1
 ```
+
+##### select changes
+```
+# between commits
+git format-patch 2e33d..655da
+
+# all the commits on the current branch to master/branch 
+git format-patch master
+```
