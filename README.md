@@ -45,3 +45,15 @@ git format-patch 2e33d..655da
 # all the commits on the current branch to master/branch 
 git format-patch master
 ```
+
+## rebase
+```
+# rebase current branch to tip of master
+git rebase master
+
+# rebase new_feature to tip of master
+git rebase master new_feature
+
+# return commit where topic branch diverges
+git merge-base master new_feature
+```
