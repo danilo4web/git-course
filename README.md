@@ -57,3 +57,15 @@ git rebase master new_feature
 # return commit where topic branch diverges
 git merge-base master new_feature
 ```
+
+## reset commit
+```
+# reset HEAD for sha1
+git reset --hard 11e503d
+
+# reset X commits ago
+git reset --hard HEAD~1
+
+# force push
+git push -f
+```
